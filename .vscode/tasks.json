@@ -9,8 +9,9 @@
                 "/EHsc",
                 "/Zi",
                 "/Fe:",
-                "main/main.exe",
-                "main/main.cpp"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            
             ],
             "group": {
                 "kind": "build",
@@ -20,18 +21,6 @@
                 "reveal": "always"
             },
             "problemMatcher": "$msCompile"
-        },
-        {
-            "type": "shell",
-            "label": "cl.exe build active file",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/Fe:",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
-            ]
         }
     ]
 }
