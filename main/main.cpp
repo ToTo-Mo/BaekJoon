@@ -1,7 +1,8 @@
-#include <iostream>
-using namespace std;
+#include "../16969/question_16969.h"
 
 void main()
 {
-    cout<<"hello world"<<endl;
+    while(true)
+        question_16969();
+    system("pause");
 }

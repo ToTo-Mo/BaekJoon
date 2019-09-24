@@ -1,3 +1,6 @@
+#cumstom
+*.vs
+
 # Prerequisites
 *.d
 
