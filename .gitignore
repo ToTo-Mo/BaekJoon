@@ -1,5 +1,9 @@
 #cumstom
 *.vs
+*.ilk
+*.pdb
+*.obj
+
 
 # Prerequisites
 *.d
