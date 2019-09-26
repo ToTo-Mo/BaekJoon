@@ -1,4 +1,4 @@
-#include "../16969/question_16969.h"
+#include "..\16969\question_16969.h"
 
 void main()
 {

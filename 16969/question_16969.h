@@ -6,7 +6,7 @@ void question_16969()
     string str;
     cin>>str;
 
-    int numberOfcases = 1;
+    unsigned long long  numberOfcases = 1;
     int countd = 10;
     int countc = 26;
 
@@ -14,17 +14,16 @@ void question_16969()
     {
         if(str[i] == 'd')
         {
-            numberOfcases *= countd;
-            countd = countd >= 9 ? --countd : 10;
+            numberOfcases = numberOfcases * countd % 1000000009;
+            countd = countd > 9 ? --countd : countd;
             countc = 26;
         }
         else if(str[i] == 'c')
         {
-            numberOfcases *= countc;
-            countc = countc >= 25 ? --countc : 26;
+            numberOfcases = numberOfcases * countc % 1000000009;
+            countc = countc > 25 ? --countc : countc;
             countd = 10;
         }
     }
-    
     cout<<numberOfcases<<endl;
 }
