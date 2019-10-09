@@ -1,8 +1,11 @@
-#include "..\16969\question_16969.h"
+#include <windows.h>
+#include <stdio.h>
 
-void main()
-{
-    while(true)
-        question_16969();
-    system("pause");
+int main() {
+   int arr[2] = {'#'};
+
+   printf("%d",arr[0]);
+
+   system("pause");
+   return 0;
 }
