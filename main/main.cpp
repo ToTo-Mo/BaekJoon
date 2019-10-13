@@ -1,11 +1,9 @@
 #include <windows.h>
 #include <stdio.h>
+#include <limits.h>
+
 
 int main() {
-   int arr[2] = {'#'};
-
-   printf("%d",arr[0]);
-
-   system("pause");
-   return 0;
+   printf("%d",INT_MAX-1);
+   system("puase");
 }
